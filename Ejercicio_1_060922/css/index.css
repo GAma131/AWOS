@@ -16,3 +16,12 @@ body {
   background-image: url(/imgs/bannerChido.png);
   background-size: contain;
 }
+
+#iframeContent {
+  width: 100%;
+  height: 600px;
+}
+
+#contenido {
+  height: 400px;
+}

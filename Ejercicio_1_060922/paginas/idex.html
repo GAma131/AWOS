@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="/css/index.css" />
     <link rel="stylesheet" href="/css/cssMenu.css" />
+    <link rel="stylesheet" href="/css/cssdropdown.css" />
 
     <title>MiPagina</title>
   </head>
@@ -20,29 +21,35 @@
       <nav id="menu">
         <ul>
           <li>
-            <a class="pancho" href="">Inicio</a>
+            <a class="pancho" href="/paginas/inicio.html" target="iframeContent"
+              >Inicio</a
+            >
           </li>
           <li>
-            <a href="">Acerca de</a>
+            <a href="/paginas/galeria.html" target="iframeContent">Acerca de</a>
           </li>
           <li>
             <a href="">Galeria</a>
           </li>
-
-          <li id="juanCarlos">
-            <div class="dropdown">
-              <button class="dropbtn">PERFIL</button>
-              <div class="dropdown-content">
-                <a href="#">Datos</a>
-                <a href="#">Iniciar Sesión</a>
-                <a href="#">Cerrar Sesión</a>
-              </div>
+          <div class="dropdown" id="juanCarlos">
+            <button class="dropbtn">PERFIL</button>
+            <div class="dropdown-content">
+              <a href="#">Datos</a>
+              <a href="#">Iniciar Sesión</a>
+              <a href="#">Cerrar Sesión</a>
             </div>
-          </li>
+          </div>
         </ul>
       </nav>
 
-      <section id="contenido"></section>
+      <section id="contenido">
+        <iframe
+          id="iframeContent"
+          name="iframeContent"
+          src="inicio.html"
+          frameborder="0"
+        ></iframe>
+      </section>
     </div>
   </body>
 </html>
