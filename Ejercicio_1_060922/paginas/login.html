@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Login</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <div id="formularioLogin">
+    <!-- <div id="formularioLogin">
       <form id="formLogin" name="formLogion" action="" method="post">
         <label for="">
           <h1>Login</h1>
@@ -38,6 +46,40 @@
           name="btnCancelar"
           id="btnCancelar"
         />
+      </form>
+    </div> -->
+
+    <div id="formularioLogin">
+      <form id="formLogin" name="formLogion" action="" method="post">
+        <label for="">
+          <h1>Login</h1>
+        </label>
+        <div class="form-group">
+          <label for="formGroupExampleInput">Usuario</label>
+          <input
+            type="text"
+            class="form-control"
+            id="formGroupExampleInput"
+            placeholder="Juanito123"
+          />
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Contraseña</label>
+          <input
+            type="password"
+            class="form-control"
+            id="formGroupExampleInput2"
+            placeholder="...."
+          />
+          <br />
+          <input type="submit" value="Entrar" name="btnEntrar" id="btnEntrar" />
+          <input
+            type="reset"
+            value="Cancelar"
+            name="btnCancelar"
+            id="btnCancelar"
+          />
+        </div>
       </form>
     </div>
   </body>

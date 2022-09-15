@@ -25,3 +25,9 @@ body {
 #contenido {
   height: 400px;
 }
+
+/* Login */
+
+#formLogin {
+  margin: 5px;
+}
