@@ -13,8 +13,19 @@
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
+
+    <script src="../vendor/alertifyjs/alertify.js"></script>
+    <link rel="stylesheet" href="../vendor/alertifyjs/css/alertify.css" />
+    <script>
+      function mensaje() {
+        alertify;
+        alertify.alert("Bienvenido", function () {
+          alertify.message("OK");
+        });
+      }
+    </script>
   </head>
-  <body>
+  <body onload="mensaje();">
     <div id="formularioLogin">
       <form id="formLogin" name="formLogion" action="" method="post">
         <label for="">
